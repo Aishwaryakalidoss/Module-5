@@ -24,9 +24,26 @@ To write a Python code to create a class for a person with a parameterized const
 ### PROGRAM
 
 ```
+# Reg.No- 212222060008
+# Name- AISHWARYA K
+class Addition:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+        print("First number =", self.a)
+        print("Second number =", self.b)
 
+    def add(self):
+        print("Addition of two numbers =", self.a + self.b)
+
+a = int(input())
+b = int(input())
+obj = Addition(a, b)
+obj.add()
 ```
 
 ### OUTPUT
+<img width="684" height="279" alt="image" src="https://github.com/user-attachments/assets/d2cc1003-8c6e-4017-8aac-551ebbe62f10" />
 
 ### RESULT
+Thus, the Python program to perform addition of two numbers using a parameterized constructor has been successfully executed and the output is verified.
