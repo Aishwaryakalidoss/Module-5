@@ -29,12 +29,42 @@ To write a Python program to get the employee and doctor details and display the
 ### PROGRAM
 ```
 
+# Reg.No- 212222060008
+# Name- AISHWARYA K
+class Student:
+    def __init__(self, name, id):
+        self.name = name
+        self.id = id
 
+class Attendance:
+    def __init__(self, attendance):
+        self.attendance = attendance
+
+class Module(Student, Attendance):
+    def __init__(self, name, id, attendance):
+        Student.__init__(self, name, id)
+        Attendance.__init__(self, attendance)
+
+    def check_eligibility(self):
+        print(self.name)
+        print(self.id)
+        if self.attendance > 80:
+            print("Eligible for Module Exam")
+        else:
+            print("Not Eligible for Module Exam")
+
+name = input()
+id = int(input())
+attendance = int(input())
+obj = Module(name, id, attendance)
+obj.check_eligibility()
 ```
 
 ### OUTPUT  
 
-(Output Screenshot)  
+<img width="684" height="284" alt="image" src="https://github.com/user-attachments/assets/1d39d9e9-2bf2-4153-aa91-259e94c550a5" />
+
 
 
 ### RESULT
+Thus, the Python program to check student eligibility for the Next Module using multiple inheritance has been successfully executed and the output is verified.
