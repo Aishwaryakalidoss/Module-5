@@ -22,10 +22,22 @@ To create a Python class `Student` with a destructor.
 ### PROGRAM
 
 ```
+# Reg.No- 212222060008
+# Name-  AISHWARYA K
+class Employee:
+    def __init__(self):
+        print("Employee created.")
 
+    def __del__(self):
+        print("Destructor called, Employee deleted.")
+
+obj = Employee()
+del obj
 ```
 
 ### OUTPUT
+<img width="684" height="168" alt="image" src="https://github.com/user-attachments/assets/b1765fa0-9fa8-4200-affa-c79d6e900146" />
 
 
 ### RESULT
+Thus, the Python program to demonstrate the use of a destructor in a class has been successfully executed and the output is verified
