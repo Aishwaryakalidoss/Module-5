@@ -32,14 +32,48 @@ To write a Python program to get the name, attendance, and ID of a student and c
 ### PROGRAM
 
 ```
+# Reg.No- 212222060008
+# Name- AISHWARYA K
+class Add:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+    def add(self):
+        return self.a + self.b
 
+class Sub:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+    def sub(self):
+        return self.a - self.b
+
+class Div:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+    def div(self):
+        return self.a / self.b
+
+class Calculate(Add, Sub, Div):
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+a = int(input())
+b = int(input())
+obj = Calculate(a, b)
+print(obj.add())
+print(obj.sub())
+print(obj.div())
 ```
 
 ### OUTPUT
+<img width="406" height="200" alt="image" src="https://github.com/user-attachments/assets/5533261f-7875-476e-8cf5-24061ac7c43c" />
 
 
 ### RESULT
-
+Thus, the Python program to calculate Addition, Subtraction and Division using Multiple Inheritance has been successfully executed and the output is verified.
 
 
 
